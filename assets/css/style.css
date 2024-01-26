@@ -1,0 +1,182 @@
+/* Global style of html */
+* {
+    box-sizing: border-box;
+    border: 1px dashed rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: relative;
+}
+
+/* Style of header */
+header {
+    background-color: #5b2f16;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 1320px; */
+    margin: auto;
+}
+
+.navbar input {
+    border-radius: 20px;
+}
+
+.navbar-flex {
+    display: flex;
+}
+
+.navbar ul {
+    width: 100%;
+}
+
+.navbar li {
+    color: white;
+    display: inline;
+    padding: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+#logo-svg {
+    width: 100%;
+    max-width: 70px;
+}
+
+.search-color {
+    color: white;
+}
+
+/* Style of main */
+main {
+    min-width: 360px;
+}
+
+.container-flex {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    align-content: stretch;
+}
+
+.card {
+    width: 30%;
+    max-width: 400px;
+    min-width: 360px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    flex-basis: auto;
+}
+
+.card h4 {
+    display: flex;
+    justify-content: end;
+}
+
+.card h3, p, h4 {
+    padding: 3px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.star-color {
+    color: gold;
+}
+
+div h1, .card h3, .card h4 a {
+    color: #2a6914;
+}
+
+div h1 {
+    text-align: center;
+}
+
+
+article img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 230px;
+}
+
+/* Style of footer */
+footer {
+    background-color: #5b2f16;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-footer {
+    margin-top: 30px;
+    background-image: url("/assets/images/cooking.svg");
+    background-repeat: no-repeat;
+    background-size: cover; /* ou background-size: contain; selon vos préférences */
+    height: 30vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    min-width: 360px;
+    max-width: 1320px;
+    margin: auto;
+}
+
+footer p {
+    align-self: center;
+    text-transform: uppercase;
+}
+
+footer li, footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-links img {
+    width: 20px;
+}
+
+.footer-social-links a {
+    text-decoration: none;
+    color: white;
+}
+.footer-category {
+    width: -webkit-fill-available;
+}
