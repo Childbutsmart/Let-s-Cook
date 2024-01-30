@@ -36,28 +36,31 @@ header {
     width: 300px;
 }
 
-.navbar a {
-    color: white;
-    padding: 20px;
+.navbar-links {
+    display: flex;
 }
 
 .navbar a {
-    text-decoration: none;
     color: white;
+    padding: 20px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
     text-decoration: underline;
 }
 
-#logo-svg {
-    width: 100%;
-    flex-basis: 90px;
-}
 
 .navbar-flex {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    flex-basis: 440px;
+}
+
+#logo-svg {
+    width: 100%;
+    flex-basis: 100px;
 }
 
 .search-color {
@@ -74,14 +77,14 @@ main {
     min-width: 360px;
 }
 
-.container-flex {
+.container{
     max-width: 1320px;
     margin: auto;
     display: flex;
     flex-direction:column;
 }
 
-.container {
+.container-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -138,6 +141,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .bg-footer {
@@ -185,4 +189,47 @@ footer li a:hover {
 .input-size {
     border-radius: 20px;
     width: 100%;
+}
+
+@media screen and (min-width: 230px) and (max-width: 714px) {
+    .navbar-flex a{
+        flex-basis: 300px;
+    }
+
+    .navbar-flex svg {
+        width: 100%;
+        margin: auto;
+    }
+
+    .navbar-form {
+        margin: auto;
+    }
+
+    .navbar-links {
+        margin: auto;
+    }
+
+    .navbar-form input {
+        width: 250px;
+    }
+
+    .bg-footer {
+        margin-top: -170px;
+    }
+}
+
+@media screen and (min-width: 715px) and (max-width: 1090px) {
+    .footer-content {
+        flex-basis: 715px;
+        max-height: 300px;
+        flex-wrap: nowrap;
+    }
+
+    .footer-category {
+        flex-basis: 237px;
+    }
+
+    .bg-footer {
+        margin-top: -70px;
+    }
 }
