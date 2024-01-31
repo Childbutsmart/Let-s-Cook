@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's Cook</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/form-style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -26,6 +27,7 @@
     />
   </head>
   <body>
+    <!-- ANCHOR Header -->
     <header>
       <nav class="navbar">
         <div class="navbar-flex">
@@ -118,9 +120,9 @@
           </svg>
           <!-- ANCHOR Links of navbar -->
           <div class="navbar-links">
-            <a href="#">Accueil</a>
-            <a href="#">Recettes</a>
-            <a href="#">Tendances</a>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">Trends</a>
           </div>
         </div>
         <!-- ANCHOR Search bar -->
@@ -137,303 +139,133 @@
         </div>
       </nav>
     </header>
+    <!-- ANCHOR Main -->
     <main>
-      <!-- ANCHOR Container content -->
-      <div class="container">
-        <h1>Toutes les recettes</h1>
-        <div class="container-content">
-          <!-- ANCHOR Cards article -->
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-1.jpg"
-              alt="1ère recette"
-            />
-            <h3>Tempora possimus ullam</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+      <div class="container-form">
+        <div class="form-img">
+        <img
+          src="assets/images/img-recettes/ice-cream.jpg"
+          alt="Ice Cream Image"
+        />
+        </div>
+        <div class="form-section">
+        <h1>Sign Up</h1>
+        <h3>Get full access</h3>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-2.jpg"
-              alt="2ème recette"
-            />
-            <h3>Minima quo aut</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+        <form>
+          <div class="form-register">
+            <label for="first-name">
+              <input
+                type="text"
+                id="first-name"
+                placeholder="First Name"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-3.jpg"
-              alt="3ème recette"
-            />
-            <h3>Nihil sit libero</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="last-name">
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Last Name"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-4.jpg"
-              alt="4ème recette"
-            />
-            <h3>Adipisci quidem velit</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="username">
+              <input
+                type="text"
+                id="username"
+                placeholder="Username"
+                requiredminlenght="4"
+                maxlength="8"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-5.jpg"
-              alt="5ème recette"
-            />
-            <h3>Omnis et voluptas</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="gender">
+              <select
+                id="gender"
+                title="Select your gender"
+                placeholder="Gender"
+              >
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="" disabled selected>Select your gender</option>
+              </select>
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-6.jpg"
-              alt="6ème recette"
-            />
-            <h3>Et ex eius</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="email-form">
+              <input
+                type="email"
+                id="email-form"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-7.jpg"
-              alt="7ème recette"
-            />
-            <h3>Qui modi et</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="pwd">
+              <input
+                type="password"
+                id="pwd"
+                placeholder="Password"
+                requiredminlenght="6"
+                maxlength="14"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-8.jpg"
-              alt="8ème recette"
-            />
-            <h3>Corporis quos modi</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="pwd-confirm">
+              <input
+                type="password"
+                id="pwd-confirm"
+                placeholder="Confirm password"
+                requiredminlenght="6"
+                maxlength="14"
+                required
+              />
+            </label>
+          </div>
 
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-9.jpg"
-              alt="9ème recette"
-            />
-            <h3>Soluta quo quaerat</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
-
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-10.jpg"
-              alt="10ème recette"
-            />
-            <h3>Consectetur reprehenderit</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
-
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-11.jpg"
-              alt="11ème recette"
-            />
-            <h3>Ea magni possimus</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
-
-          <article class="card">
-            <img
-              src="/assets/images/img-recettes/recette-12.jpg"
-              alt="12ème recette"
-            />
-            <h3>Accusamus est distinctio</h3>
-            <p class="underline">
-              Difficulté :<span
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-                ><i class="fa-solid fa-star star-color"></i
-              ></span>
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              eligendi consequuntur consequatur, nemo beatae tempora iste cum
-              veritatis id veniam, mollitia dolore voluptas ut impedit pariatur
-              facilis porro hic. Exercitationem!
-            </p>
-            <h4>
-              <a href="#">En savoir plus</a>
-            </h4>
-          </article>
+          <div class="form-register">
+            <label for="phone">
+              <input
+                type="number"
+                id="phone"
+                placeholder="Phone number"
+                maxlength="10"
+                required
+              />
+            </label>
+          </div>
+          <div>
+          <label for="submit-btn">
+            <button
+              type="submit"
+              class="form-btn"
+              id="submit-btn"
+              title="register"
+            ></button>
+          </label>
+          </div>
+        </form>
         </div>
       </div>
     </main>
-    <!-- ANCHOR Background-Image of footer -->
+    <!-- ANCHOR Footer -->
     <div class="bg-footer"></div>
     <footer>
       <!-- ANCHOR Footer sections -->
@@ -441,37 +273,37 @@
         <div class="footer-category">
           <!-- ANCHOR Important Links on footer -->
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Recettes</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
 
         <div class="footer-category">
           <!-- ANCHOR Social links Category -->
-          <h3>Suivez-nous</h3>
+          <h3>Follow us</h3>
           <span class="footer-social-links">
-            <a href="https://www.facebook.com"
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"
               ><i
                 class="fa-brands fa-square-facebook"
                 title="Icône Facebook"
               ></i
             ></a>
-            <a href="https://www.instagram.com"
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"
               ><i
                 class="fa-brands fa-square-instagram"
                 title="Icône Instagram"
               ></i
             ></a>
-            <a href="https://www.twitter.com"
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"
               ><i class="fa-brands fa-square-twitter" title="Icône Twitter"></i
             ></a>
           </span>
         </div>
         <div class="footer-category">
           <!-- ANCHOR Newsletter Category -->
-          <h3>Abonnez-vous à notre Newsletter</h3>
+          <h3>Subscribe to our newsletter</h3>
           <label for="email">Email:</label><br />
           <input
             class="input-size"
