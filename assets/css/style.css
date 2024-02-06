@@ -34,6 +34,7 @@ header {
 .navbar input {
     border-radius: 20px;
     width: 250px;
+    padding: 4px;
 }
 
 .navbar input:hover {
@@ -45,7 +46,7 @@ header {
     display: flex;
 }
 
-.navbar a {
+.navbar-links a {
     color: white;
     padding: 20px;
     text-decoration: none;
@@ -69,7 +70,13 @@ header {
 }
 
 .search-color {
+    /* align-self: center; */
     color: white;
+    font-size: 18px;
+}
+
+.navbar-form {
+    display: flex;
 }
 
 .navbar-form button {
@@ -77,10 +84,26 @@ header {
     border: none;
 }
 
+.navbar-form button:hover, .container-form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#log-page {
+
+}
+
+.p-item {
+    color: white;
+    border: 2px solid;
+    align-self: center;
+    padding: 3px;
+}
+
 /* ANCHOR Style of main */
 main {
     min-width: 360px;
-    padding-top: 16px;
+    padding-top: 8px;
 }
 
 .container {
@@ -119,6 +142,24 @@ main {
     padding: 3px;
 }
 
+
+.badge {
+    background-color: #2a6914;
+    color: white;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 3px 7px;
+    z-index: 1;
+}
+
+.container-badge {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -139,6 +180,11 @@ article img {
     width: 100%;
     object-fit: cover;
     max-height: 230px;
+}
+
+article img:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 /* ANCHOR Style of footer */
@@ -240,25 +286,3 @@ footer li a:hover {
         margin-top: -70px;
     }
 }
-
-
-/* .Article__badge {
-    background-color: #2a6914;
-    color: white;
-    position: absolute;
-    border-radius: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px;
-    padding: 3px 7px;
-    z-index: 1;
-}
-
-.article__badge-contener {
-    display: flex;
-    justify-content: flex-end;
-}
-
-<div class="article__badge-contener">
-              <p class="Article__badge">Viande</p> 
-            </div> */
